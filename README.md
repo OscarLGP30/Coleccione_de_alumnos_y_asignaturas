@@ -1,4 +1,4 @@
-# Coleccione_de_alumnos_y_asignaturas
+# Colecciones_de_alumnos_y_asignaturas
 
 # Enunciado
 
