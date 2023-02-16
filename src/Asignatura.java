@@ -1,5 +1,5 @@
 
-public class Asignatura
+public class Asignatura implements Comparable<Asignatura>
 {
     String codigo = "";
     String nombre = "";
@@ -23,7 +23,7 @@ public class Asignatura
         this.calificacion = calificacion;
     }
 
-    public String toString()
+    @Override public String toString()
     {
         return
         (
@@ -37,5 +37,10 @@ public class Asignatura
             +
             (this.calificacion == -1. ? "sin calificación" : this.calificacion)
         );
+    }
+
+    @Override public int compareTo(Asignatura x)
+    {
+        return this.codigo.compareTo(x.codigo);
     }
 }

@@ -1,5 +1,6 @@
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Alumno
 {
@@ -66,8 +67,10 @@ public class Alumno
         return nota_total / asignaturas;
     }
 
-    public String toString()
+    @Override public String toString()
     {
+        Collections.sort(this.asignaturas);
+
         return
         (
             this.np
